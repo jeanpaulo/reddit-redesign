@@ -1,3 +1,4 @@
+/* GERAL */
 #app {
     display: flex;
     align-items: stretch;
@@ -18,12 +19,12 @@
     color: orangered;
 }
 
+
+/* DRAWER - Menu a esquerda */
 .drawer {
     background: #e0e0e0;
-    width: 300px;
-    
+    width: 300px;  
 }
-
     .logo-container {
         height: 80px;
         display: flex;
@@ -31,68 +32,58 @@
         padding-left: 20px;
     }
 
-    img.logo {
-        width: 100px;
-        background-repeat: no-repeat;
-    }
+        img.logo {
+            width: 100px;
+            background-repeat: no-repeat;
+        }
 
     #sidebar {
         height: 400px;
     }
 
-        #sidebar .sidebar-menu {
-
-        }
-
         ul.sidebar-group {
             margin-top: 40px;
         }
 
-        ul.sidebar-group li {
-            padding-left: 25px;
-        }
-
-        .sidebar-header {
-            /* background-color: palevioletred; */
-            padding: 0px 0px 10px 0px;
-        }
-
-            .sidebar-header > span {
-                font-weight: bold;
-                color: #3f3f3f
-            }
-        
-        .sidebar-link {
-            
-        }
-
-        .sidebar-link.active {
-            background-color: #c0c0c0;
-            border-right: 4px solid orangered;
-        }
-
-            .sidebar-link a {
-                display: block;
-                padding: 10px;
-                font-weight: bolder;
+            ul.sidebar-group li {
+                padding-left: 25px;
             }
 
-            .sidebar-link span {
-                padding-left: 14px;
+            .sidebar-header {
+                padding: 0px 0px 10px 0px;
             }
 
-            .sidebar-link a:hover {
+                .sidebar-header > span {
+                    font-weight: bold;
+                    color: #3f3f3f
+                }
+
+            .sidebar-link.active {
+                background-color: #c0c0c0;
+                border-right: 4px solid orangered;
+            }
+
+            .sidebar-link:hover {
+                background-color: #f0f0f0;
                 color: orangered;
             }
 
-        .sidebar-link:hover {
-            background-color: #f0f0f0;
-            color: orangered;
-        }
+                .sidebar-link a {
+                    display: block;
+                    padding: 10px;
+                    font-weight: bolder;
+                }
 
-        
+                    .sidebar-link span {
+                        padding-left: 14px;
+                    }
 
-        
+                .sidebar-link a:hover {
+                    color: orangered;
+                }
+
+
+/* MAIN - lado direito */   
 
 .main {
     width: 100%;
@@ -106,123 +97,139 @@
         display: flex;
     }
 
-    .header-menu, .header-search, .header-options {
-        flex-grow: 1;
-        /* border: 2px solid cornflowerblue; */
-    }
-
-    .header-menu {
-        flex-grow: 0.5;
-    }
-
-    .menu-container {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #e0e0e0;
-        border-bottom: 0;
-        border-right: 2px solid #e0e0e0;
-    }
-
-    .menu-container span {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-
-        background: #4f4f4f;
-        border-radius: 3px;
-    }
-
-    .header-search {
-        flex-grow: 8;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 10px;
-        height: 100%;
-    }
-
-    .header-search .search-bar {
-        height: 40px;
-        width: 100%;
-        padding: 4px;
-    }
-
-    .header-options {
-        flex-grow: 4;
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-        /* .header-options .options-panel,
-        .header-options .options-profile {
-            border: 1px solid red;
-        } */
-
-        .header-options .options-panel {
-            flex-grow: 4;
-        }
-
-        .header-options .options-profile {
+        .header-menu, .header-search, .header-options {
             flex-grow: 1;
         }
 
-        .options-panel {
-            text-align: right;
+        .header-menu {
+            flex-grow: 0.5;
         }
 
-        .options-menu li {
-            display: inline-block;
-            padding: 0px 8px;
-            /* border: 1px solid green; */
-        }
-
-        .options-profile {
-            text-align: left;
-        }
-
-            .profile {
-                /* width: 100%; */
+            .menu-container {
                 display: flex;
+                height: 100%;
+                flex-direction: column;
                 align-items: center;
-                padding-left: 30px;
+                justify-content: center;
+                border: 1px solid #e0e0e0;
+                border-bottom: 0;
+                border-right: 2px solid #e0e0e0;
             }
 
-            .profile-image {
-                width: 40px;
+                .menu-container span {
+                    display: block;
+                    width: 33px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    position: relative;
+
+                    background: #4f4f4f;
+                    border-radius: 3px;
+                }
+
+        .header-search {
+            flex-grow: 8;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+            height: 100%;
+        }
+
+            .header-search .search-bar {
                 height: 40px;
-                border-radius: 50%;
-                display: inline-block;
+                width: 100%;
+                padding: 4px;
             }
 
-            .profile-menu {
-                padding: 15px;
+        .header-options {
+            
+        }
+
+            .options-panel {
+                
             }
+
+                .options-menu {
+                    
+                }
+
+                    .options-menu li {
+                    
+                    }
+
+            .options-profile {
+                
+            }
+                .profile {
+                    
+                }
+
+                    .profile-image {
+                        border-radius: 50%;
+                        display: none;
+                    }
+
+                    .profile-menu {
+                        
+                    }
+
+                    .profile-menu span {
+
+                    }
 
     .content {
         height: 600px;
-    }
+    } 
 
     .posts-list {
-        justify-content: center;
-        width: 1000px;
-        border:  10px solid sienna ;
+        /* border: 2px solid blue; */
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .post-card {
-        width: 100%;
-        border: 1px solid red;
-        margin: 10px;
-        margin-top: 60px;
-        
-    }
+        .post-card {
+            width: 800px;
+            border: 1px solid #afafaf;
+            border-radius: 4px;
+            margin: 40px auto;
+            display: flex;
+            min-height: 150px;
+        }
 
-    .post-rank {
-        
-    }
+            .post-rank {
+                border-right: 1px solid #afafaf;
+                width: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+            }
+
+                .rank-up-wrapper, .rank-down-wrapper {
+                    width: 100%;
+                    border: 1px solid #4f4f4f;
+                    padding: 6px;
+                }
+
+            .post {
+                width: 100%;
+                position: relative;
+                padding: 6px;
+            }
+
+                .post-title {
+                    font-size: 12px;
+                    border-bottom: 1px solid #afafaf;
+                }
+
+                .post article {
+                    font-size: 14px;
+                    padding: 4px;
+                }
+
+                .post-footer {
+                    font-size: 12px;
+                    position: absolute;
+                    bottom: 0;
+                }
