@@ -206,6 +206,23 @@
             }
 
     .content {
-        border: 1px solid red;
         height: 600px;
+    }
+
+    .posts-list {
+        justify-content: center;
+        width: 1000px;
+        border:  10px solid sienna ;
+    }
+
+    .post-card {
+        width: 100%;
+        border: 1px solid red;
+        margin: 10px;
+        margin-top: 60px;
+        
+    }
+
+    .post-rank {
+        
     }
